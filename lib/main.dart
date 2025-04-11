@@ -13,3 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp();
   }
 }
+
+class Rainbow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
