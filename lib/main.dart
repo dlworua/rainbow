@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Rainbow extends StatelessWidget {
-  final List<Color> rainbowColors = [
+  final List<Color> rainbowColor = [
     Colors.red,
     Colors.orange,
     Colors.yellow,
@@ -29,7 +29,7 @@ class Rainbow extends StatelessWidget {
     return SafeArea(
       child: Column(
         children:
-            rainbowColors.map((color) {
+            rainbowColor.map((color) {
               return Expanded(child: Container(color: color));
             }).toList(),
       ),
