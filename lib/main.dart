@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//주석
 class Rainbow extends StatelessWidget {
   final List<Color> rainbowColor = [
     Colors.red,
