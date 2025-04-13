@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
 class Rainbow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     throw UnimplementedError();
   }
 }
