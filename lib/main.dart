@@ -16,6 +16,6 @@ class MyApp extends StatelessWidget {
 class Rainbow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return SafeArea(child: Column());
   }
 }
