@@ -29,8 +29,11 @@ class Rainbow extends StatelessWidget {
     return SafeArea(
       child: Column(
         children:
-            rainbowColor.map((color) {
-              return Expanded(child: Container(color: color));
+            List.generate(rainbowColor.length, (index) {
+              return Expanded(child : GestureDetector(onTap: () {
+               print('이건 ${colorNames[index]}이에요!') 
+              },)
+                child: Container(color: rainbowColor[index]));
             }).toList(),
       ),
     );
