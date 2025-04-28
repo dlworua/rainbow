@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rainbow/ui/pages/red/red.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,14 @@ class Rainbow extends StatelessWidget {
               return Expanded(
                 child: GestureDetector(
                   onTap: () {
-                    print('${colorNames[index]}을 선택하셨습니다.');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return Red();
+                        },
+                      ),
+                    );
                   },
                   child: Container(color: rainbowColor[index]),
                 ),
