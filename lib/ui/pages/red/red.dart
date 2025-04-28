@@ -4,6 +4,7 @@ class Red extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.red[100],
       appBar: AppBar(title: Text('RED', style: TextStyle(color: Colors.red))),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

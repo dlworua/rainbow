@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:rainbow/ui/pages/blue/blue.dart';
+import 'package:rainbow/ui/pages/green/green.dart';
+import 'package:rainbow/ui/pages/indigo/indigo.dart';
+import 'package:rainbow/ui/pages/orange/orange.dart';
+import 'package:rainbow/ui/pages/purple/purple.dart';
 import 'package:rainbow/ui/pages/red/red.dart';
+import 'package:rainbow/ui/pages/yellow/yellow.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +41,16 @@ class Rainbow extends StatelessWidget {
     '보라색',
   ];
 
+  final List<Widget> pages = [
+    Red(),
+    Orange(),
+    Yellow(),
+    Green(),
+    Blue(),
+    Indigo(),
+    Purple(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -48,7 +64,7 @@ class Rainbow extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Red();
+                          return pages[index];
                         },
                       ),
                     );

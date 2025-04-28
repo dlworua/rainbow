@@ -4,6 +4,7 @@ class Orange extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[100],
       appBar: AppBar(
         title: Text('ORANGE', style: TextStyle(color: Colors.orange)),
       ),

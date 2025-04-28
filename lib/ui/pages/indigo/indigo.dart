@@ -5,6 +5,7 @@ class Indigo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigo[100],
       appBar: AppBar(
         title: Text('INDIGO', style: TextStyle(color: Colors.indigo)),
       ),

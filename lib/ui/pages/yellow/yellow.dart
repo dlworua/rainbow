@@ -4,8 +4,9 @@ class Yellow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        title: Text('YELLOW', style: TextStyle(color: Colors.yellow)),
+        title: Text('YELLOW', style: TextStyle(color: Colors.yellow[600])),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -15,7 +16,7 @@ class Yellow extends StatelessWidget {
             child: Text(
               '노랑색 페이지 입니다!',
               style: TextStyle(
-                color: Colors.yellow,
+                color: Colors.yellow[600],
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
